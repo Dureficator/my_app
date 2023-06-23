@@ -30,7 +30,6 @@ ALLOWED_HOSTS = ['188.120.233.246',
                  'dureficator.fvds.ru',
                  'localhost',
                  '127.0.0.1',
-
                  ]
 
 

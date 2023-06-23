@@ -19,7 +19,12 @@ services:
       - database
   database:
     image: postgres:14.6-alpine
+    ports:
+      - "5432:5432"
+    volumes: 
+      - ./data:/var/lib/postgresql/data
     environment:
       - POSTGRES_DB=dbname
       - POSTGRES_USER=dbuser
       - POSTGRES_PASSWORD=pass
+
